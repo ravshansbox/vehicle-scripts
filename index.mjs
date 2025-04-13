@@ -105,7 +105,7 @@ function postNilufar(slot) {
 function postAhmedova(slot) {
   return post(
     'ahmedova',
-    '186962136',
+    '187243969',
     selectedDate,
     slot,
     {
