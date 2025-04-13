@@ -35,9 +35,9 @@ async function post(owner, taskId, date, slot, body, cookie) {
     data.includes('Навбатга қўйиш имкони бўлмади, кейинроқ қайта уриниб кўринг')
   ) {
     console.log('failure', owner, date, slot)
+    throw new Error(`${owner} ${date} ${slot}`)
   } else {
     console.log('success', owner, date, slot)
-    throw new Error(owner)
   }
 }
 
@@ -168,21 +168,41 @@ function postSaodatOpa(date, slot) {
 // })()
 ;(async () => {
   for (const slot of shuffledSlots) {
-    await postRustam(date, slot)
+    try {
+      await postIqbol(date, slot)
+      break
+    } catch (error) {
+      continue
+    }
   }
 })()
 ;(async () => {
   for (const slot of shuffledSlots) {
-    await postAhmedova(date, slot)
+    try {
+      await postAhmedova(date, slot)
+      break
+    } catch (error) {
+      continue
+    }
   }
 })()
 ;(async () => {
   for (const slot of shuffledSlots) {
-    await postSherzodbek(date, slot)
+    try {
+      await postSherzodbek(date, slot)
+      break
+    } catch (error) {
+      continue
+    }
   }
 })()
 ;(async () => {
   for (const slot of shuffledSlots) {
-    await postSaodatOpa(date, slot)
+    try {
+      await postSaodatOpa(date, slot)
+      break
+    } catch (error) {
+      continue
+    }
   }
 })()
