@@ -12,8 +12,6 @@ for (let hour = 0; hour < 24; hour++) {
   }
 }
 
-const shuffledSlots = remeda.shuffle(slots)
-
 async function post(owner, taskId, date, slot, body, cookie) {
   const { data } = await axios.post(
     `https://oldmy.gov.uz:4433/uz/vehicle-certification/default/index?retry=2&taskId=${taskId}`,
@@ -157,17 +155,27 @@ function postSaodatOpa(date, slot) {
 }
 
 // ;(async () => {
-//   for (const slot of shuffledSlots) {
-//     await postIqbol('iqbol', slot)
+//   for (const slot of remeda.shuffle(slots)) {
+//     try {
+//       await postIqbol(date, slot)
+//       break
+//     } catch (error) {
+//       continue
+//     }
 //   }
 // })()
 // ;(async () => {
-//   for (const slot of shuffledSlots) {
-//     await postNilufar('nilufar', slot)
+//   for (const slot of remeda.shuffle(slots)) {
+//     try {
+//       await postNilufar(date, slot)
+//       break
+//     } catch (error) {
+//       continue
+//     }
 //   }
 // })()
 ;(async () => {
-  for (const slot of shuffledSlots) {
+  for (const slot of remeda.shuffle(slots)) {
     try {
       await postRustam(date, slot)
       break
@@ -177,7 +185,7 @@ function postSaodatOpa(date, slot) {
   }
 })()
 ;(async () => {
-  for (const slot of shuffledSlots) {
+  for (const slot of remeda.shuffle(slots)) {
     try {
       await postAhmedova(date, slot)
       break
@@ -187,7 +195,7 @@ function postSaodatOpa(date, slot) {
   }
 })()
 ;(async () => {
-  for (const slot of shuffledSlots) {
+  for (const slot of remeda.shuffle(slots)) {
     try {
       await postSherzodbek(date, slot)
       break
@@ -197,7 +205,7 @@ function postSaodatOpa(date, slot) {
   }
 })()
 ;(async () => {
-  for (const slot of shuffledSlots) {
+  for (const slot of remeda.shuffle(slots)) {
     try {
       await postSaodatOpa(date, slot)
       break
