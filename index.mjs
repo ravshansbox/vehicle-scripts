@@ -119,6 +119,45 @@ function postAhmedova(slot) {
   )
 }
 
+function postSherzodbek(slot) {
+  return post(
+    'sherzodbek',
+    '186962283',
+    '28.04.2025',
+    slot,
+    {
+      '_csrf-myap':
+        'Fe8stq5SEEXkCmpfW2pJ8byMXTWTjJId500tqQn_rNotvGjs7R9HI55rIBAYPnHFy-glBqP1pV-NJ0SafK6VjA==',
+      'VehicleCertificationModel[pinfl]': '30501902110033',
+      'VehicleCertificationModel[full_name]':
+        'ERGASHEV SHERZODBEK MAMURJONOVICH',
+      'VehicleCertificationModel[passport_number]': 'AA7285326',
+      'VehicleCertificationModel[vin_model]':
+        'Автотранспортное средство кат. M1, марки BYD SONG PLUS Champion VIN: LGXCE4CB3S0281252',
+    },
+    '_pk_id.1.d579=40149437781441b3.1744217882.; smart_top=1; _pk_ses.1.d579=1; pevaOun6hphKuMxXIGRaDhmAzaVL3uQfLKMMfkB2G=433b81c4e71ff96eec6a5b8697087268852e0d69dc86ee2afee02936ffe1f376a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22pevaOun6hphKuMxXIGRaDhmAzaVL3uQfLKMMfkB2G%22%3Bi%3A1%3Bs%3A689%3A%22eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzUxMiJ9.eyJpc3MiOiJteTMuZ292LnV6IiwiYXVkIjoiTXlHb3YgQVBJIiwianRpIjoiNzY5NjY2YTUtYTk4Yy0zZDM2LWFmZDUtZmQ2NjViOGZmNDU4Iiwic3ViIjoiYmVlZWM3NzEtMjA5Yi00MTllLThhNWQtYjA2YjU0Mzg3MWMxIiwiaWF0IjoxNzQ0NDc3MjExLCJuYmYiOjE3NDQ0NzcyMTEsImV4cCI6MTc0NDQ3OTMxMSwidV91aWQiOiJiZWVlYzc3MS0yMDliLTQxOWUtOGE1ZC1iMDZiNTQzODcxYzEiLCJzX3VpZCI6Ijc2OTY2NmE1LWE5OGMtM2QzNi1hZmQ1LWZkNjY1YjhmZjQ1OCIsImFjY2Vzc190eXBlIjoiY2l0aXplbiIsInRpbiI6MCwidXNlcl90eXBlIjoiSSIsInBsYXRmb3JtIjoid2ViIiwiY29tcGFueV9pZCI6bnVsbH0.AOVMfqj1ThwttDL6P0hdRizq8JNN_AIp1QkMPUv-2EfA8zsV4kk6K5eocLw3dWoJ9tPJ5jeOIJ3ZwoiEQkFLYi5BAAL4J81J3vSuS_NIqAzcf5Bj5zzpFd6W7dWN9WHEMmSr8P05qS1Nt2KVaMzCb88aw1Fxkx_J7FksJECZs0fKwojU%22%3B%7D; epigu-common=fq7vj8qmb8r9qns1e8s610tg2h; _identity-common=47765cb5e4a3f001b14152e301b6ae8e865d2fb981da8750db023f1f750da3c7a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-common%22%3Bi%3A1%3Bs%3A21%3A%22%5B11564832%2Ctrue%2C86400%5D%22%3B%7D; _csrf-myap=4bb542ea04326351414f6afab59ce7d75d6efb6cf4dae3f760668d265260e68ca%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_csrf-myap%22%3Bi%3A1%3Bs%3A32%3A%228SDZCMWfzaJOCT84wdx30y7Bjji3uQ9V%22%3B%7D; _language=c42fec7cd3531209cc9f8f603970ef73f63f4ae9accb0e76f765fe336aa2f53ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D',
+  )
+}
+
+function postSaodatOpa(slot) {
+  return post(
+    'Saodat Opa',
+    '187096817',
+    '28.04.2025',
+    slot,
+    {
+      '_csrf-myap':
+        'a2Tw0HTHqcim1pcJx1Gg2XF7sS2550NiFCV3vyKjoEEgBZ6pJ5Ph-P-Apn-hE-G2OjDuQMCXOjshbzb3aNLzOQ==',
+      'VehicleCertificationModel[pinfl]': '41604717090014',
+      'VehicleCertificationModel[full_name]': 'URAZMETOVA SAODAT SABURBAYEVNA',
+      'VehicleCertificationModel[passport_number]': 'AD4067374',
+      'VehicleCertificationModel[vin_model]':
+        'Автотранспортное средство кат. M1, марки BYD SONG PLUS Champion VIN: LGXCE4CB5S0278126',
+    },
+    '_pk_id.1.d579=40149437781441b3.1744217882.; smart_top=1; _pk_ses.1.d579=1; pevaOun6hphKuMxXIGRaDhmAzaVL3uQfLKMMfkB2G=2615381644a9b66e8b8174d8db4edc7d6a0194d995d9ea08eb97c27739ff123aa%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22pevaOun6hphKuMxXIGRaDhmAzaVL3uQfLKMMfkB2G%22%3Bi%3A1%3Bs%3A689%3A%22eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzUxMiJ9.eyJpc3MiOiJteTMuZ292LnV6IiwiYXVkIjoiTXlHb3YgQVBJIiwianRpIjoiNWYyMWIxY2UtZWJmMS0zOGM0LWI1MjMtMmJkZjJiOWQ0MjhkIiwic3ViIjoiN2IyYzg5MWQtOWM1My00NzdhLThiODYtYWYzZjc5ZDgwNDQwIiwiaWF0IjoxNzQ0NDc3Mzk2LCJuYmYiOjE3NDQ0NzczOTYsImV4cCI6MTc0NDQ3OTQ5NiwidV91aWQiOiI3YjJjODkxZC05YzUzLTQ3N2EtOGI4Ni1hZjNmNzlkODA0NDAiLCJzX3VpZCI6IjVmMjFiMWNlLWViZjEtMzhjNC1iNTIzLTJiZGYyYjlkNDI4ZCIsImFjY2Vzc190eXBlIjoiY2l0aXplbiIsInRpbiI6MCwidXNlcl90eXBlIjoiSSIsInBsYXRmb3JtIjoid2ViIiwiY29tcGFueV9pZCI6bnVsbH0.ANNKEfZL9Gwwr-KxcVuJ6NxEzrPggkEgDJ-C8L6-rn1wzyXss2ufESk7gYb4bMvgV9vzMSOoRg-Y0sE1IugyHFSpAEFXq6AKsaNLWiiuRLeYWa4dtDCuJX95usI2VmFpffcIELbkab9NH1LYH1b3Vn5gyAs4NyLCILlBybFq5wR4M8Dh%22%3B%7D; epigu-common=mus7eeagva0bdlhe5pku6tsgm0; _identity-common=ec45a2ab6e66b427b970137dfd3d8e9acfce1b355cd28cf8a3ab02e0e7fa7f66a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-common%22%3Bi%3A1%3Bs%3A20%3A%22%5B8266057%2Ctrue%2C86400%5D%22%3B%7D; _csrf-myap=74e711257ee6915e287796fd666b73590ba9f0eb814acbf59f0b30265fa25bd0a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_csrf-myap%22%3Bi%3A1%3Bs%3A32%3A%22KanySTH0YV1vfBAoKK_mypyY5JAHJqSx%22%3B%7D; _language=c42fec7cd3531209cc9f8f603970ef73f63f4ae9accb0e76f765fe336aa2f53ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D',
+  )
+}
+
 // ;(async () => {
 //   for (const interval of shuffledIntervals) {
 //     await postIqbol('iqbol', interval)
@@ -131,14 +170,23 @@ function postAhmedova(slot) {
 //   }
 // })()
 
-; (async () => {
+;(async () => {
   for (const interval of shuffledIntervals) {
     await postRustam('rustam', interval)
   }
 })()
-
-  ; (async () => {
-    for (const interval of shuffledIntervals) {
-      await postAhmedova('ahmedova', interval)
-    }
-  })()
+;(async () => {
+  for (const interval of shuffledIntervals) {
+    await postAhmedova('ahmedova', interval)
+  }
+})()
+;(async () => {
+  for (const interval of shuffledIntervals) {
+    await postSherzodbek('sherzodbek', interval)
+  }
+})()
+;(async () => {
+  for (const interval of shuffledIntervals) {
+    await postSaodatOpa('saodat', interval)
+  }
+})()
