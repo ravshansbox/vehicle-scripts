@@ -119,26 +119,26 @@ function postAhmedova(slot) {
   )
 }
 
-;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postIqbol('iqbol', interval)
-  }
-})()
+// ;(async () => {
+//   for (const interval of shuffledIntervals) {
+//     await postIqbol('iqbol', interval)
+//   }
+// })()
 
-;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postNilufar('nilufar', interval)
-  }
-})()
+// ;(async () => {
+//   for (const interval of shuffledIntervals) {
+//     await postNilufar('nilufar', interval)
+//   }
+// })()
 
-;(async () => {
+; (async () => {
   for (const interval of shuffledIntervals) {
     await postRustam('rustam', interval)
   }
 })()
 
-;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postAhmedova('ahmedova', interval)
-  }
-})()
+  ; (async () => {
+    for (const interval of shuffledIntervals) {
+      await postAhmedova('ahmedova', interval)
+    }
+  })()
