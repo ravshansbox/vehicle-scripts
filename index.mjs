@@ -15,7 +15,7 @@ for (let hour = 0; hour < 24; hour++) {
 const shuffledSlots = remeda.shuffle(slots)
 
 async function post(owner, taskId, date, slot, body, cookie) {
-  const response = await axios.post(
+  const { data } = await axios.post(
     `https://oldmy.gov.uz:4433/uz/vehicle-certification/default/index?retry=2&taskId=${taskId}`,
     {
       actionBook: 'submit',
@@ -31,7 +31,6 @@ async function post(owner, taskId, date, slot, body, cookie) {
       },
     },
   )
-  const data = response.data
   if (
     data.includes('Навбатга қўйиш имкони бўлмади, кейинроқ қайта уриниб кўринг')
   ) {
