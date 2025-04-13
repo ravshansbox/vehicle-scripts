@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as remeda from 'remeda'
 
-const selectedData = '28.04.2025'
+const selectedDate = '28.04.2025'
 
 const intervals = (() => {
   const result = []
@@ -49,7 +49,7 @@ function postIqbol(slot) {
   return post(
     'iqbol',
     '186962517',
-    selectedData,
+    selectedDate,
     slot,
     {
       '_csrf-myap':
@@ -68,7 +68,7 @@ function postRustam(slot) {
   return post(
     'rustam',
     '186962136',
-    selectedData,
+    selectedDate,
     slot,
     {
       '_csrf-myap':
@@ -87,7 +87,7 @@ function postNilufar(slot) {
   return post(
     'nilufar',
     '187208462',
-    selectedData,
+    selectedDate,
     slot,
     {
       '_csrf-myap':
@@ -106,7 +106,7 @@ function postAhmedova(slot) {
   return post(
     'ahmedova',
     '186962136',
-    selectedData,
+    selectedDate,
     slot,
     {
       '_csrf-myap':
@@ -125,7 +125,7 @@ function postSherzodbek(slot) {
   return post(
     'sherzodbek',
     '186962283',
-    selectedData,
+    selectedDate,
     slot,
     {
       '_csrf-myap':
@@ -145,7 +145,7 @@ function postSaodatOpa(slot) {
   return post(
     'Saodat Opa',
     '187096817',
-    selectedData,
+    selectedDate,
     slot,
     {
       '_csrf-myap':
