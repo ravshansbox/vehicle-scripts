@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as remeda from 'remeda'
 
-const date = '28.04.2025'
+const date = '29.04.2025'
 
 const slots = []
 for (let hour = 0; hour < 24; hour++) {
@@ -169,7 +169,7 @@ function postSaodatOpa(date, slot) {
 ;(async () => {
   for (const slot of shuffledSlots) {
     try {
-      await postIqbol(date, slot)
+      await postRustam(date, slot)
       break
     } catch (error) {
       continue
