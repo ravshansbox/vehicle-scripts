@@ -1,21 +1,18 @@
 import axios from 'axios'
 import * as remeda from 'remeda'
 
-const selectedDate = '28.04.2025'
+const date = '28.04.2025'
 
-const intervals = (() => {
-  const result = []
-  for (let hour = 0; hour < 24; hour++) {
-    for (let minute = 0; minute < 60; minute += 15) {
-      const formattedHour = hour.toString().padStart(2, '0')
-      const formattedMinute = minute.toString().padStart(2, '0')
-      result.push(`${formattedHour}:${formattedMinute}:00`)
-    }
+const slots = []
+for (let hour = 0; hour < 24; hour++) {
+  for (let minute = 0; minute < 60; minute += 15) {
+    const formattedHour = hour.toString().padStart(2, '0')
+    const formattedMinute = minute.toString().padStart(2, '0')
+    slots.push(`${formattedHour}:${formattedMinute}:00`)
   }
-  return result
-})()
+}
 
-const shuffledIntervals = remeda.shuffle(intervals)
+const shuffledSlots = remeda.shuffle(slots)
 
 async function post(owner, taskId, date, slot, body, cookie) {
   const response = await axios.post(
@@ -45,11 +42,11 @@ async function post(owner, taskId, date, slot, body, cookie) {
   }
 }
 
-function postIqbol(slot) {
+function postIqbol(date, slot) {
   return post(
     'iqbol',
     '186962517',
-    selectedDate,
+    date,
     slot,
     {
       '_csrf-myap':
@@ -64,11 +61,11 @@ function postIqbol(slot) {
   )
 }
 
-function postRustam(slot) {
+function postRustam(date, slot) {
   return post(
     'rustam',
     '186962136',
-    selectedDate,
+    date,
     slot,
     {
       '_csrf-myap':
@@ -83,11 +80,11 @@ function postRustam(slot) {
   )
 }
 
-function postNilufar(slot) {
+function postNilufar(date, slot) {
   return post(
     'nilufar',
     '187208462',
-    selectedDate,
+    date,
     slot,
     {
       '_csrf-myap':
@@ -102,11 +99,11 @@ function postNilufar(slot) {
   )
 }
 
-function postAhmedova(slot) {
+function postAhmedova(date, slot) {
   return post(
     'ahmedova',
-    '187243969',
-    selectedDate,
+    '186962136',
+    date,
     slot,
     {
       '_csrf-myap':
@@ -121,11 +118,11 @@ function postAhmedova(slot) {
   )
 }
 
-function postSherzodbek(slot) {
+function postSherzodbek(date, slot) {
   return post(
     'sherzodbek',
     '186962283',
-    selectedDate,
+    date,
     slot,
     {
       '_csrf-myap':
@@ -141,11 +138,11 @@ function postSherzodbek(slot) {
   )
 }
 
-function postSaodatOpa(slot) {
+function postSaodatOpa(date, slot) {
   return post(
     'Saodat Opa',
     '187096817',
-    selectedDate,
+    date,
     slot,
     {
       '_csrf-myap':
@@ -161,34 +158,32 @@ function postSaodatOpa(slot) {
 }
 
 // ;(async () => {
-//   for (const interval of shuffledIntervals) {
-//     await postIqbol('iqbol', interval)
+//   for (const slot of shuffledSlots) {
+//     await postIqbol('iqbol', slot)
 //   }
 // })()
-
 // ;(async () => {
-//   for (const interval of shuffledIntervals) {
-//     await postNilufar('nilufar', interval)
+//   for (const slot of shuffledSlots) {
+//     await postNilufar('nilufar', slot)
 //   }
 // })()
-
 ;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postRustam(interval)
+  for (const slot of shuffledSlots) {
+    await postRustam(date, slot)
   }
 })()
 ;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postAhmedova(interval)
+  for (const slot of shuffledSlots) {
+    await postAhmedova(date, slot)
   }
 })()
 ;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postSherzodbek(interval)
+  for (const slot of shuffledSlots) {
+    await postSherzodbek(date, slot)
   }
 })()
 ;(async () => {
-  for (const interval of shuffledIntervals) {
-    await postSaodatOpa(interval)
+  for (const slot of shuffledSlots) {
+    await postSaodatOpa(date, slot)
   }
 })()
