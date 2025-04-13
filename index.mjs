@@ -172,21 +172,21 @@ function postSaodatOpa(slot) {
 
 ;(async () => {
   for (const interval of shuffledIntervals) {
-    await postRustam('rustam', interval)
+    await postRustam(interval)
   }
 })()
 ;(async () => {
   for (const interval of shuffledIntervals) {
-    await postAhmedova('ahmedova', interval)
+    await postAhmedova(interval)
   }
 })()
 ;(async () => {
   for (const interval of shuffledIntervals) {
-    await postSherzodbek('sherzodbek', interval)
+    await postSherzodbek(interval)
   }
 })()
 ;(async () => {
   for (const interval of shuffledIntervals) {
-    await postSaodatOpa('saodat', interval)
+    await postSaodatOpa(interval)
   }
 })()
