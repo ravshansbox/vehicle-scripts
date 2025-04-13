@@ -34,10 +34,10 @@ async function post(owner, taskId, date, slot, body, cookie) {
   if (
     data.includes('Навбатга қўйиш имкони бўлмади, кейинроқ қайта уриниб кўринг')
   ) {
-    console.log('failure', owner, date, slot)
+    console.log('failure', owner.padEnd(15, '.'), date, slot)
     throw new Error(`${owner} ${date} ${slot}`)
   } else {
-    console.log('success', owner, date, slot)
+    console.log('success', owner.padEnd(15, '.'), date, slot)
   }
 }
 
