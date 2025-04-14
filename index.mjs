@@ -88,6 +88,7 @@ const items = [
 ]
 
 const errorRegex = /<div class="alert alert-danger">(.+?)<\/div>/s
+const commentRegex = /<\!--.*?-->/g
 
 async function post({
   taskId,
@@ -123,7 +124,8 @@ async function post({
     // data.includes('Навбатга қўйиш имкони бўлмади, кейинроқ қайта уриниб кўринг')
     regexResp.length > 1
   ) {
-    console.log('failure', date, slot, fullName, regexResp[1].trim())
+    const errorMessage = regexResp[1].replace(commentRegex, '').trim()
+    console.log('failure', date, slot, fullName.padEnd(40, '.'), errorMessage)
     throw new Error(`${owner} ${date} ${slot}`)
   } else {
     console.log('success', date, slot, fullName)
