@@ -87,6 +87,8 @@ const items = [
   },
 ]
 
+const errorRegex = /<div class="alert alert-danger">(.+?)<\/div>/s
+
 async function post({
   taskId,
   csrf,
@@ -116,10 +118,12 @@ async function post({
     Cookie: cookie,
   }
   const { data } = await axios.post(url, body, { headers })
+  const regexResp = data.match(errorRegex)
   if (
-    data.includes('Навбатга қўйиш имкони бўлмади, кейинроқ қайта уриниб кўринг')
+    // data.includes('Навбатга қўйиш имкони бўлмади, кейинроқ қайта уриниб кўринг')
+    regexResp.length > 1
   ) {
-    console.log('failure', date, slot, fullName)
+    console.log('failure', date, slot, fullName, regexResp[1].trim())
     throw new Error(`${owner} ${date} ${slot}`)
   } else {
     console.log('success', date, slot, fullName)
