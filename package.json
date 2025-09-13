@@ -18,7 +18,7 @@
   "homepage": "https://github.com/ravshansbox/vehicle-scripts#readme",
   "description": "",
   "dependencies": {
-    "axios": "^1.8.4",
+    "axios": "^1.12.0",
     "remeda": "^2.21.2"
   },
   "devDependencies": {
